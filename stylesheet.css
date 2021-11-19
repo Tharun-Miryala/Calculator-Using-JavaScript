@@ -1,0 +1,67 @@
+body {
+	background-image: url('download1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+div h1 {
+	font-size: 45px;
+	font-family: 'Times New Roman', Times, serif;
+	color: yellowgreen;
+}
+
+.calculator{
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 80px;
+	width: 400px;
+}
+.calculator-screen{
+	width: 100%;
+	height: 100px;
+	background-color: #252525;
+	color: whitesmoke;
+	text-align: right;
+	font-size: 36px;
+	padding: 0 20px;
+	box-sizing: border-box;
+	border: 1px solid whitesmoke;
+}
+.calculator-keys{
+	width: 100%;
+}
+
+.row{
+	display: flex;
+	justify-content: center; 
+}
+
+button{
+	height: 80px;
+	background-color: gray;
+	border: 1px solid black;
+	font-size: 32px;
+	color: #fff;
+	width: 25%;
+
+}
+
+.all-clear, .equal-sign{
+	width: 50%;
+}
+
+.all-clear {
+    background-color: darkorchid;
+}
+
+.operator,.equal-sign{
+	background-color: orange;
+}
+
+button:hover:not(.all-clear, .operator, .equal-sign){
+	background-color: darkgray;
+}
+
+.operator:hover, .equal-sign:hover{
+	background-color: darkorange;
+}
